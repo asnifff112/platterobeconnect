@@ -1,5 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "PLATTEROBE — More Than a Meal. A Daily Essential.",
@@ -12,11 +18,6 @@ export const metadata: Metadata = {
     url: "https://platterobe.co/connect",
     siteName: "PLATTEROBE",
     type: "website",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
   },
 };
 
