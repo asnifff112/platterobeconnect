@@ -7,6 +7,7 @@ export const viewport: Viewport = {
   maximumScale: 1,
 };
 
+
 export const metadata: Metadata = {
   title: "PLATTEROBE — More Than a Meal. A Daily Essential.",
   description:
