@@ -115,15 +115,12 @@ export default function ConnectLinks() {
     return (
       <div className={styles.comingSoon}>
         <p className={styles.comingSoonBrand}>{siteConfig.brandName}</p>
-
         <p className={styles.comingSoonTitle}>WEBSITE COMING SOON</p>
-
         <p className={styles.comingSoonBody}>
           We&rsquo;re working on something fresh.
           <br />
           Check back soon.
         </p>
-
         <button
           id="btn-back"
           className={styles.link}
@@ -160,29 +157,40 @@ export default function ConnectLinks() {
         <span>CALL US</span>
       </a>
 
-      {/* Instagram - platterobe.store */}
+      {/* Instagram */}
       <a
         id="btn-instagram"
-        href="https://www.instagram.com/platterobe.store/"
+        href={siteConfig.instagramUrl}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.link}
       >
         <InstagramIcon />
-        <span>platterobe.store</span>
+        <span>INSTAGRAM</span>
       </a>
 
-      {/* Website - www.platterobe.store */}
-      <a
-        id="btn-website"
-        href="https://www.platterobe.store"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={styles.link}
-      >
-        <ArrowUpRightIcon />
-        <span>VISIT WEBSITE</span>
-      </a>
+      {/* Website — conditional: opens URL if available, else "Coming Soon" */}
+      {siteConfig.websiteUrl ? (
+        <a
+          id="btn-website"
+          href={siteConfig.websiteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
+          <ArrowUpRightIcon />
+          <span>VISIT WEBSITE</span>
+        </a>
+      ) : (
+        <button
+          id="btn-website"
+          className={styles.link}
+          onClick={() => setShowComingSoon(true)}
+        >
+          <ArrowUpRightIcon />
+          <span>VISIT WEBSITE</span>
+        </button>
+      )}
     </nav>
   );
 }

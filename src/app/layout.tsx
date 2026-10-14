@@ -13,11 +13,25 @@ export const metadata: Metadata = {
   description:
     "Freshly prepared meals made for everyday living. Order on WhatsApp or call us directly.",
   metadataBase: new URL("https://platterobe.co"),
+  icons: {
+    icon: [
+      { url: "/images/logo.png" },
+      { url: "/favicon.ico" },
+    ],
+  },
   openGraph: {
     title: "PLATTEROBE",
     description: "More Than a Meal. A Daily Essential.",
     url: "https://platterobe.co/connect",
     siteName: "PLATTEROBE",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 512,
+        height: 512,
+        alt: "PLATTEROBE Logo",
+      },
+    ],
     type: "website",
   },
 };

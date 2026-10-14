@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import siteConfig from "@/config/site";
 import ConnectLinks from "./ConnectLinks";
 import styles from "./connect.module.css";
@@ -17,7 +18,17 @@ export default function ConnectPage() {
   return (
     <main className={styles.page}>
       <div className={styles.container}>
-        <h1 className={styles.brandName}>{siteConfig.brandName}</h1>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px" }}>
+          <Image
+            src="/images/logo.png"
+            alt={siteConfig.brandName}
+            width={68}
+            height={68}
+            className="rounded-[14px] object-contain shadow-sm"
+            priority
+          />
+          <h1 className={styles.brandName}>{siteConfig.brandName}</h1>
+        </div>
         <ConnectLinks />
       </div>
     </main>
