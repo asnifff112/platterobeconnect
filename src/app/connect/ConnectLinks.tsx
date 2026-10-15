@@ -170,7 +170,7 @@ export default function ConnectLinks() {
       </a>
 
       {/* Website — conditional: opens URL if available, else "Coming Soon" */}
-      {siteConfig.websiteUrl ? (
+      {siteConfig.websiteUrl && siteConfig.websiteUrl.trim() ? (
         <a
           id="btn-website"
           href={siteConfig.websiteUrl}

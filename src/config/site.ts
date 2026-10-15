@@ -20,6 +20,9 @@ export interface SiteConfig {
   /** Instagram profile URL */
   instagramUrl: string;
 
+  /** Official Instagram handle */
+  instagramHandle: string;
+
   /** Public website URL — set to null until live */
   websiteUrl: string | null;
 
@@ -40,11 +43,12 @@ const siteConfig: SiteConfig = {
 
   phoneUrl: "tel:+919497716349",
 
-  instagramUrl:
-    "https://www.instagram.com/platterobe.co?stkn=MWVoaWo3M3JrYXJjdQ%3D%3D&utm_source=qr",
+  instagramUrl: "https://www.instagram.com/platterobe.store/",
+
+  instagramHandle: "@platterobe.store",
 
   // ── Future links (hidden or "coming soon" until a value is provided) ──
-  websiteUrl: null,
+  websiteUrl: "https://www.platterobe.store/",
   menuUrl: null,
   locationUrl: null,
   email: null,

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "PLATTEROBE — More Than a Meal. A Daily Essential.",
   description:
     "Freshly prepared meals made for everyday living. Order on WhatsApp or call us directly.",
-  metadataBase: new URL("https://platterobe.co"),
+  metadataBase: new URL("https://www.platterobe.store"),
   icons: {
     icon: [
       { url: "/images/logo.png" },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PLATTEROBE",
     description: "More Than a Meal. A Daily Essential.",
-    url: "https://platterobe.co/connect",
+    url: "https://www.platterobe.store/connect",
     siteName: "PLATTEROBE",
     images: [
       {
